@@ -1,0 +1,110 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #4e54c8, #8f94fb);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+}
+
+/* Container Layout */
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 40px;
+    background: #f4f6f9;
+}
+
+/* Map Section */
+.map-section {
+    width: 45%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact-info {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.contact-info a {
+    color: #4e54c8;
+    text-decoration: none;
+}
+
+/* Form Section */
+.form-section {
+    width: 45%;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.form-section h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.form-section p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #4e54c8, #8f94fb);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: linear-gradient(90deg, #8f94fb, #4e54c8);
+}
+
+/* Footer */
+footer {
+    background: #0d1117;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    position: relative;
+}
+
+footer a {
+    color: #8f94fb;
+    text-decoration: none;
+}
+
+.social-icons img {
+    width: 20px;
+    margin: 0 8px;
+    vertical-align: middle;
+}

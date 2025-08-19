@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Left Side (Map + Contact Info) -->
+        <div class="map-section">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3746.8823624825254!2d77.75964317475352!3d20.93737549093056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd6bb6847bb5c15%3A0x45763e9b07ae5c2f!2sAmravati%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1692604900000!5m2!1sen!2sin" 
+                width="100%" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+
+            <div class="contact-info">
+                <p><strong>ADDRESS</strong><br>
+                Gav Songaon, Taluka Chandur Railway,<br>
+                District Amravati</p>
+
+                <p><strong>EMAIL</strong><br>
+                <a href="mailto:rautmanisha065@gmail.com">rautmanisha065@gmail.com</a></p>
+
+                <p><strong>PHONE</strong><br>
+                +91 8767700733</p>
+            </div>
+        </div>
+
+        <!-- Right Side (Form) -->
+        <div class="form-section">
+            <h2>Feedback</h2>
+            <p>We would love to hear your thoughts and suggestions.</p>
+            <form action="/submit" method="POST">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <textarea name="message" placeholder="Write your message..." required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <small>Your feedback helps us improve our service!</small>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 My Website — <a href="#">@myprofile</a></p>
+        <div class="social-icons">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt="LinkedIn"></a>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
